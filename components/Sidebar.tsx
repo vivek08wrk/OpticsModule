@@ -45,14 +45,16 @@ export default function Sidebar({ sections, currentSection, onSectionChange, onS
 
   return (
     <>
-      {/* Mobile menu button */}
+      {/* Mobile menu button (FAB) */}
       <Button
         variant="outline"
-        size="sm"
-        className="fixed top-24 left-4 z-50 md:hidden bg-background shadow-md border-border"
+        size="icon"
+        aria-label="Toggle table of contents"
+        aria-expanded={isMobileOpen}
+        className="fixed bottom-6 right-4 z-50 md:hidden bg-background shadow-lg border-border rounded-full h-12 w-12"
         onClick={() => setIsMobileOpen(!isMobileOpen)}
       >
-        {isMobileOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+        {isMobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
       </Button>
 
       {/* Mobile overlay */}

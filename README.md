@@ -87,3 +87,7 @@ Then open http://localhost:3000.
 
 ## 📜 License
 MIT (or your preferred license).
+
+---
+
+For a deeper dive (architecture, approach, and extension guidelines), see `docs/OVERVIEW.md`.
